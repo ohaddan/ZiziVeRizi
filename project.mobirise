@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "ZiziVeRizi",
-    "currentPage": "index.html",
+    "currentPage": "where-are-we.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -26,15 +26,19 @@
         "isRoundedButtons": true,
         "isAnimatedOnScroll": false,
         "isScrollToTopButton": false
-      }
+      },
+      "additionalSetColors": [
+        "#000000"
+      ]
     },
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.8.8",
     "siteFonts": [],
     "favicon": "@PROJECT_PATH@/assets/images/logo-128x72.png",
     "noImageResize": "",
-    "uniqCompNum": 4,
-    "versionPublish": "4.8.8"
+    "uniqCompNum": 22,
+    "versionPublish": "4.10.1",
+    "screenshot": "screenshot.png"
   },
   "pages": {
     "index.html": {
@@ -130,9 +134,868 @@
             }
           },
           "_name": "testimonials-slider1",
-          "_customHTML": "<section class=\"carousel slide testimonials-slider\" group=\"Testimonials\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"BootstrapCarouselSwipe,mbr-testimonials-slider\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" title=\"Padding Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" inline>\n        <input type=\"range\" title=\"Padding Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" inline>\n        <input type=\"range\" inline title=\"Count Items\" name=\"testimonialsSlides\" min=\"1\" max=\"20\" step=\"1\" value=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Author Name\" name=\"showName\">\n        <input type=\"checkbox\" title=\"Show Author Title\" name=\"showDesk\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container text-center\">\n        <h2 class=\"pb-5 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">?איך דולפינים שומעים מתחת למים</h2>\n\n        <div class=\"carousel slide\" data-ride=\"carousel\" role=\"listbox\">\n            <div mbr-list mbr-list-grow=\"testimonialsSlides\" class=\"carousel-inner\">\n                <div class=\"carousel-item\">\n                    <div class=\"user col-md-8\">\n                        <div class=\"user_image\">\n                            <a href=\"https://soundcloud.com/ziziverizi/ziziverizi-1-dolphins\"><img src=\"@PROJECT_PATH@/assets/images/mbr-400x225.jpg\" alt title></a>\n                        </div>\n                        <div class=\"user_text pb-3\">\n                            <p class=\"mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".user_text\">?מה זה צלילים? איך פועלות האוזניים? מה קורה בעור התוף ואיך קשורים לעניין שבלולים<br><br>?מה הם גלי קול? מה זו תדירות? ואיך נשמעים 440 הרץ<br><br>?איך מישהו שומע איפשהו? ואיך דולפינים שומעים מתחת למים</p>\n                        </div>\n                        <div mbr-text class=\"user_name mbr-bold pb-2 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".user_name\">\n                            Helen\n                        </div>\n                        <div mbr-text class=\"user_desk mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDesk\" data-app-selector=\".user_desk\">\n                            DESIGNER\n                        </div>\n                    </div>\n                </div>\n                \n            </div>\n\n            <div class=\"carousel-controls\">\n                <a class=\"carousel-control-prev\" role=\"button\" data-slide=\"prev\">\n                  <span aria-hidden=\"true\" class=\"mbri-arrow-prev mbr-iconfont\"></span>\n                  <span class=\"sr-only\">Previous</span>\n                </a>\n                \n                <a class=\"carousel-control-next\" role=\"button\" data-slide=\"next\">\n                  <span aria-hidden=\"true\" class=\"mbri-arrow-next mbr-iconfont\"></span>\n                  <span class=\"sr-only\">Next</span>\n                </a>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"carousel slide testimonials-slider\" group=\"Testimonials\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"BootstrapCarouselSwipe,mbr-testimonials-slider\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" title=\"Padding Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" inline>\n        <input type=\"range\" title=\"Padding Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" inline>\n        <input type=\"range\" inline title=\"Count Items\" name=\"testimonialsSlides\" min=\"1\" max=\"20\" step=\"1\" value=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Author Name\" name=\"showName\">\n        <input type=\"checkbox\" title=\"Show Author Title\" name=\"showDesk\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container text-center\">\n        <h2 class=\"pb-5 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">?איפה אנחנו</h2>\n\n        <div class=\"carousel slide\" data-ride=\"carousel\" role=\"listbox\">\n            <div mbr-list mbr-list-grow=\"testimonialsSlides\" class=\"carousel-inner\">\n                <div class=\"carousel-item\">\n                    <div class=\"user col-md-8\">\n                        <div class=\"user_image\">\n                            <a href=\"where-are-we.html\"><img src=\"@PROJECT_PATH@/assets/images/universe-400x210.png\" alt title></a>\n                        </div>\n                        <div class=\"user_text pb-3\">\n                            <p class=\"mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".user_text\">?כמה גדול הוא כדור הארץ והאם אפשר להקיף אותו<br><br>?איפה זה שביל החלב ומה הן גלקסיות<br><br>?מה ההבדל בין כוכבי לכת וכוכבי שבת? מה זו מערכת השמש ואילו כוכבים יש בה<br><br>?עד כמה מהירה המכונית המהירה בעולם ומה התה שזיזי הכי אוהב לשתות<br></p>\n                        </div>\n                        <div mbr-text class=\"user_name mbr-bold pb-2 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".user_name\">\n                            Helen\n                        </div>\n                        <div mbr-text class=\"user_desk mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDesk\" data-app-selector=\".user_desk\">\n                            DESIGNER\n                        </div>\n                    </div>\n                </div>\n                \n            </div>\n\n            <div class=\"carousel-controls\">\n                <a class=\"carousel-control-prev\" role=\"button\" data-slide=\"prev\">\n                  <span aria-hidden=\"true\" class=\"mbri-arrow-prev mbr-iconfont\"></span>\n                  <span class=\"sr-only\">Previous</span>\n                </a>\n                \n                <a class=\"carousel-control-next\" role=\"button\" data-slide=\"next\">\n                  <span aria-hidden=\"true\" class=\"mbri-arrow-next mbr-iconfont\"></span>\n                  <span class=\"sr-only\">Next</span>\n                </a>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "rdb2du7LNz",
           "_anchor": "testimonials-slider1-2",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".carousel-item": {
+              "justify-content": "center",
+              "-webkit-justify-content": "center"
+            },
+            ".carousel-item.active, .carousel-item-next, .carousel-item-prev": {
+              "display": "flex"
+            },
+            ".carousel-controls": {
+              "a": {
+                "transition": "opacity .5s",
+                "font-size": "2rem",
+                "span": {
+                  "position": "absolute",
+                  "top": "180px",
+                  "padding": "10px",
+                  "border-radius": "50%",
+                  "color": "#585858",
+                  "background": "#c8c6c6",
+                  "opacity": ".5"
+                },
+                "&:hover": {
+                  "span": {
+                    "opacity": "1"
+                  }
+                }
+              }
+            },
+            ".user_image": {
+              "width": "200px",
+              "height": "200px",
+              "margin-bottom": "1.6rem",
+              "overflow": "hidden",
+              "border-radius": "50%",
+              "margin": "0 auto 2rem auto",
+              "img": {
+                "width": "100%",
+                "min-width": "100%",
+                "min-height": "100%"
+              }
+            },
+            "@media (max-width: 230px)": {
+              ".user_image": {
+                "width": "100%",
+                "height": "auto"
+              }
+            },
+            ".user_text": {
+              "text-align": "center"
+            }
+          },
+          "_name": "testimonials-slider1",
+          "_customHTML": "<section class=\"carousel slide testimonials-slider\" group=\"Testimonials\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"BootstrapCarouselSwipe,mbr-testimonials-slider\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" title=\"Padding Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" inline>\n        <input type=\"range\" title=\"Padding Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" inline>\n        <input type=\"range\" inline title=\"Count Items\" name=\"testimonialsSlides\" min=\"1\" max=\"20\" step=\"1\" value=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Author Name\" name=\"showName\">\n        <input type=\"checkbox\" title=\"Show Author Title\" name=\"showDesk\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container text-center\">\n        <h2 class=\"pb-5 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">?איך דולפינים שומעים מתחת למים</h2>\n\n        <div class=\"carousel slide\" data-ride=\"carousel\" role=\"listbox\">\n            <div mbr-list mbr-list-grow=\"testimonialsSlides\" class=\"carousel-inner\">\n                <div class=\"carousel-item\">\n                    <div class=\"user col-md-8\">\n                        <div class=\"user_image\">\n                            <a href=\"https://soundcloud.com/ziziverizi/ziziverizi-1-dolphins\"><img src=\"@PROJECT_PATH@/assets/images/dolphins-400x225.jpg\" alt title></a>\n                        </div>\n                        <div class=\"user_text pb-3\">\n                            <p class=\"mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".user_text\">?מה זה צלילים? איך פועלות האוזניים? מה קורה בעור התוף ואיך קשורים לעניין שבלולים<br><br>?מה הם גלי קול? מה זו תדירות? ואיך נשמעים 440 הרץ<br><br>?איך מישהו שומע איפשהו? ואיך דולפינים שומעים מתחת למים</p>\n                        </div>\n                        <div mbr-text class=\"user_name mbr-bold pb-2 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".user_name\">\n                            Helen\n                        </div>\n                        <div mbr-text class=\"user_desk mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDesk\" data-app-selector=\".user_desk\">\n                            DESIGNER\n                        </div>\n                    </div>\n                </div>\n                \n            </div>\n\n            <div class=\"carousel-controls\">\n                <a class=\"carousel-control-prev\" role=\"button\" data-slide=\"prev\">\n                  <span aria-hidden=\"true\" class=\"mbri-arrow-prev mbr-iconfont\"></span>\n                  <span class=\"sr-only\">Previous</span>\n                </a>\n                \n                <a class=\"carousel-control-next\" role=\"button\" data-slide=\"next\">\n                  <span aria-hidden=\"true\" class=\"mbri-arrow-next mbr-iconfont\"></span>\n                  <span class=\"sr-only\">Next</span>\n                </a>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "testimonials-slider1-9",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "rrdCax8LHi",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "where-are-we.html": {
+      "settings": {
+        "meta_descr": "איפה אנחנו?\nWhere are we?\nזיזי וריזי\nzizi rizi\ngalaxy universe\nגלקסיה שביל החלב",
+        "title": "איפה אנחנו?",
+        "order": 2
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "P": {
+              "color": "#767676"
+            },
+            "H1": {
+              "color": "#ffffff"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#efefef"
+            }
+          },
+          "_name": "header16",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/univers-860x460.jpg\" parallax selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#efefef\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"col-md-10 align-center\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">?איפה אנחנו</h1>\n                <h3 class=\"mbr-section-subtitle mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Beautiful mobile websites\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">?כדור הארץ....? שמעתם עליו פעם? אז מה הסיפור שלו בעצם<br>?איפה הוא ואיפה אנחנו<br></p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-black-outline\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">LEARN MORE</a>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_cid": "rqQssGamSO",
+          "_anchor": "header16-4",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradientBg)": {
+                "background": "linear-gradient(45deg, @bg-value, @color2)"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@reverseContent)": {
+              ".media-container-row": {
+                "flex-direction": "row-reverse",
+                "-webkit-flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-figure": {
+              "@media (min-width: 992px)": {
+                "padding-right": "4rem",
+                "& when (@reverseContent)": {
+                  "padding-right": "0",
+                  "padding-left": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                "padding-bottom": "3rem"
+              }
+            },
+            ".mbr-text": {
+              "@media (max-width: 767px)": {
+                "text-align": "center"
+              }
+            }
+          },
+          "_name": "header3",
+          "_customHTML": "<section class=\"header3\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n    \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"90\">\n        <input type=\"checkbox\" title=\"Media On Left/Right\" name=\"reverseContent\" checked>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#000000\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"bg.type == 'color'\">\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#232323\" condition=\"gradientBg && bg.type == 'color'\">\n        \n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                <img src=\"@PROJECT_PATH@/assets/images/earth-956x956.jpg\" alt=\"Mobirise\" title>\n            </div>\n\n            <div class=\"media-content\">\n                <h1 class=\"mbr-section-title mbr-white pb-3 mbr-fonts-style\" mbr-if=\"showTitle\" mbr-theme-style=\"display-1\">\n                    הפרק המלא</h1>\n                <h3 class=\"mbr-section-subtitle align-left mbr-white mbr-light pb-3 mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-2\">\n                    Beautiful mobile websites\n                </h3>\n                <div class=\"mbr-section-text mbr-white pb-3 \">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-theme-style=\"display-5\">?כדור הארץ, היקום, מגלי ארצות ו...קינמון</p>\n                </div>\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-primary\" href=\"https://soundcloud.com/ziziverizi/zizi-where-are-we\" data-app-placeholder=\"Type Text\" target=\"_blank\">Sound cloud</a>\n                    <a class=\"btn btn-md btn-white-outline\" href=\"https://www.youtube.com/watch?v=-LGBFrfFjjI&list=PLamMaBRwRWVoKNFQ-H2MW0lfbV0or9gCE\" data-app-placeholder=\"Type Text\" target=\"_blank\">YouTube</a></div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_cid": "rqQtMzlMA6",
+          "_anchor": "header3-5",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "& when (@reverseContent)": {
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-left": "4rem"
+                }
+              },
+              "@media (max-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-top": "1rem"
+                }
+              }
+            },
+            "& when not (@reverseContent)": {
+              ".media-container-row": {
+                "flex-direction": "row-reverse",
+                "-webkit-flex-direction": "row-reverse"
+              },
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-right": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".media-container-row": {
+                  "flex-wrap": "wrap-reverse",
+                  "-webkit-flex-wrap": "wrap-reverse"
+                },
+                ".mbr-figure": {
+                  "padding-bottom": "1rem"
+                }
+              }
+            },
+            ".mbr-text": {
+              "color": "#767676",
+              "text-align": "right"
+            }
+          },
+          "_name": "content7",
+          "_customHTML": "<section class=\"mbr-section content7\" group=\"Article\">\n          \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->   \n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"60\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Text On Right/Left\" name=\"reverseContent\"> \n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12\" mbr-class=\"{'col-md-6': widthContent == 1, 'col-md-8': widthContent == 2, 'col-md-10': widthContent == 3, 'col-md-12': widthContent == 4}\">\n                <div class=\"media-container-row\">\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text align-right mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">אני מת על קינמון. קינמון הוא עץ שמקורו ביבשת אסיה, בעיקר סרי-לנקה, וסין ויש לו יותר מ – 300 מינים. לעץ עלים בוהקים בצבע ירוק, צהוב ואדום צורת העלים היא אליפסה מוארכת וגובה העץ יכול להגיע עד ל – 30 מטרים. חוץ מזה שהעץ מאוד יפה, מהקליפה של העץ מפיקים את תבלין הקינמון שכולם מכירים ואוהבים. איך מפיקים את תבלין הקינמון? טוב ששאלתם. הקליפה הפנימית של העץ היא דקה למדי וכאשר חותכים אותה היא מתייבשת בתוך כמה שעות לצורת מקלונים קטנים בצבע חום אדמדם. את המקלונים האלה, טוחנים דק-דק לאבקה, אותה האבקה שאנחנו מכירים כתבלין הקינמון. את אבקת הקינמון אפשר להוסיף למרקים ותבשילים אבל השימוש הכי נפוץ שלה הוא בתוך מאפה קינמון שיש לו ריח משגע ואין מי שלא אוהב אותו. לא הרבה אנשים יודעים, אבל אחד הדברים הכי טעימים שאפשר לעשות עם קינמון זה להכין מהקליפה שלו תה. כן, כן, את הקליפה המגולגלת של עץ הקינמון לוקחים עוד לפני שמכינים ממנה אבקה ופשוט מוסיפים אותה לכוס של מים חמים. מחכים כמה דקות והמשקה שמתקבל הוא בעל טעם מתוק ומעקצץ עם ריח נהדר. <br></p>\n                        </div>\n                    </div>\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                     <a href=\"https://www.youtube.com/watch?v=-LGBFrfFjjI\"><img src=\"@PROJECT_PATH@/assets/images/1-436x290.png\" alt=\"Mobirise\" title></a>  \n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rqQv2OsQXG",
+          "_anchor": "content7-7",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "& when not (@reverseContent)": {
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-right": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".mbr-figure": {
+                  "padding-bottom": "1rem"
+                }
+              }
+            },
+            "& when (@reverseContent)": {
+              ".media-container-row": {
+                "flex-direction": "row-reverse",
+                "-webkit-flex-direction": "row-reverse"
+              },
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-left": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".media-container-row": {
+                  "flex-wrap": "wrap-reverse",
+                  "-webkit-flex-wrap": "wrap-reverse"
+                },
+                ".mbr-figure": {
+                  "padding-top": "1rem"
+                }
+              }
+            },
+            ".mbr-text": {
+              "color": "#767676",
+              "text-align": "right"
+            }
+          },
+          "_name": "content6",
+          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"60\">\n        <input type=\"checkbox\" title=\"Text On Right/Left\" name=\"reverseContent\" checked>  \n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <a href=\"https://www.youtube.com/watch?v=YmRnhfCduis\"><img src=\"@PROJECT_PATH@/assets/images/2-436x267.png\" alt=\"Mobirise\" title></a>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">אני מת על קינמון. אתמול כשישבתי אחר הצהריים בבית והתחשק לי משהו טעים, חשבתי שתה קינמון זה בדיוק מה שאני צריך. ניגשתי למטבח, הרתחתי את הקומקום ותוך כדי ששלפתי את מקלות הקינמון כדי להכין את התה שמעתי את זיזי, החבר הזיקית שלי קורא לי.\n<br>\"הי רז!\"\n<br>\"זיזי? זה אתה?\"\n<br>\"נו מה חשבת שזה אליהו הנביא? מה העניינים רז?\"\n<br>\"הכל בסדר. איפה אתה זיק? אני לא רואה אותך.\"\n<br>\"איפה אני זו שאלה טובה מאוד. רוצה לשמוע שאלה יותר טובה?\"\n<br>\"מה?\"\n<br>\"אל תגיד מה אם שמעת. אתה רוצה לשמוע שאלה יותר טובה?\"\n<br>\"שאלה יותר טובה מאיפה אתה? כן, אני רוצה לשמוע.\"\n<br>\"תגיד רז, איפה אנחנו?\"\n<br>\"מה זאת אומרת? אני כאן ועכשיו אני רואה שגם אתה פה ליד מקלות הקינמון, אז שנינו יחד במטבח.\"\n<br>\"לא, לא רז. לא איפה אתה ואני, איפה אנחנו?\"\n<br>\"אה, אתה מתכוון איפה אנחנו, כולם – כל האנשים, כל הזיקיות, איפה אנחנו?\"\n<br>\"טוב, תשובה אחת קלה היא שאנחנו על כדור הארץ.\"\n<br>\"מה זה ואיפה זה כדור הארץ?\"\n<br>\"כדור הארץ הוא ממש פה, אנחנו עליו, כל מי שאנחנו מכירים נמצא ממש עליו, אבל אני מניח שזו לא התשובה שרצית לשמוע.\"\n<br>\"באמת רז, אל תהיה טיפשון, אני יודע שאנחנו על כדור הארץ אבל הוא, איפה נמצא כדור הארץ?\"\n<br>\"איפה נמצא כדור הארץ זו שאלה ממש טובה ואם תרצה אני אשמח לחשוב איתך עליה ביחד.\"&nbsp;<br></p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rqQvQdcCVA",
+          "_anchor": "content6-8",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "& when not (@reverseContent)": {
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-right": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".mbr-figure": {
+                  "padding-bottom": "1rem"
+                }
+              }
+            },
+            "& when (@reverseContent)": {
+              ".media-container-row": {
+                "flex-direction": "row-reverse",
+                "-webkit-flex-direction": "row-reverse"
+              },
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-left": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".media-container-row": {
+                  "flex-wrap": "wrap-reverse",
+                  "-webkit-flex-wrap": "wrap-reverse"
+                },
+                ".mbr-figure": {
+                  "padding-top": "1rem"
+                }
+              }
+            },
+            ".mbr-text": {
+              "color": "#767676",
+              "text-align": "right"
+            }
+          },
+          "_name": "content6",
+          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"60\">\n        <input type=\"checkbox\" title=\"Text On Right/Left\" name=\"reverseContent\">  \n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <a href=\"https://www.youtube.com/watch?v=IY5RCOWVi28&list=PLamMaBRwRWVoKNFQ-H2MW0lfbV0or9gCE&index=4&t=0s\"><img src=\"@PROJECT_PATH@/assets/images/3-436x273.png\" alt=\"Mobirise\" title></a>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">אה.. תגיד רז, מה יש לך שם?\"\n<br>\"זה תה קינמון, רוצה לנסות קצת?\"\n<br>\"קצת? מה אני זיקית צעצוע? אני מחכה לך בסלון, ואתה בקצב שלך יכול להכין תה קינמון לשנינו ואנחנו כבר נפגש שם. \" \n<br>עם כאלה הוראות, מה כבר יכולתי לעשות? הוצאתי עוד ספל, הכנתי גם לזיזי מנה אחת של תה קינמון והלכתי לפגוש אותו בסלון. \n<br> \"תגיד זיזי, אני שמח שבאת ואני חושב שהשאלה איפה נמצא כדור הארץ היא שאלה מצוינת, אבל מה פתאום אתה צריך לדעת?\" \"נו טוב, הוא סיפר לי איזה סיפור מסובך על איזה בן דוד שלו בשם קופרניקוס שהוא מתכנן לפגוש לקראת האביב והוא לא יכול לתאם איפה, אם הוא לא ידע בדיוק איפה הם שניהם נמצאים. האמת לא ממש הבנתי, אבל בגלל שלא רציתי שהתה יתקרר, לא חקרתי אותו יותר מדי בעניין.&nbsp;<br></p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content6-a",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "rrebw8hZqy",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "& when not (@reverseContent)": {
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-right": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".mbr-figure": {
+                  "padding-bottom": "1rem"
+                }
+              }
+            },
+            "& when (@reverseContent)": {
+              ".media-container-row": {
+                "flex-direction": "row-reverse",
+                "-webkit-flex-direction": "row-reverse"
+              },
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-left": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".media-container-row": {
+                  "flex-wrap": "wrap-reverse",
+                  "-webkit-flex-wrap": "wrap-reverse"
+                },
+                ".mbr-figure": {
+                  "padding-top": "1rem"
+                }
+              }
+            },
+            ".mbr-text": {
+              "color": "#767676",
+              "text-align": "right"
+            }
+          },
+          "_name": "content6",
+          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"60\">\n        <input type=\"checkbox\" title=\"Text On Right/Left\" name=\"reverseContent\" checked>  \n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <a href=\"https://www.youtube.com/watch?v=A_OjDTXylKQ&list=PLamMaBRwRWVoKNFQ-H2MW0lfbV0or9gCE&index=5&t=0s\"><img src=\"@PROJECT_PATH@/assets/images/4-436x274.png\" alt=\"Mobirise\" title></a>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\"כמה גדול בכלל כדור הארץ?\"\n<br>\"ההיקף של כדור הארץ..\"\n<br>\"רגע, רגע, מה זה היקף?\"\n<br>\"היקף אומר מה המרחק של המסלול שמקיף צורה כלשהי. נגיד ההיקף של כדור הארץ אומר מה המרחק שהיית צריך ללכת כדי להקיף את כדור הארץ.\"\n<br>\"מה זאת אומרת להקיף את כדור הארץ?\"\n<br>\"זאת אומרת, לצאת ממקום כלשהו, נגיד הבית שלנו, ואז ללכת ישר ישר בלי לפנות.\"\n<br>\"ולאן מגיעים בסוף?\"\n<br>\"בדיוק לאן שהתחלנו.\"\n<br>\"מה, איך זה יכול להיות?\"\n<br>\"כדור הארץ, כשמו כן הוא, באמת כדור. תחשוב על כדור אחר, נגיד כדורסל או תפוח שגם להם צורה כדורית. אם שמים את האצבע בנקודה מסוימת על הכדור והולכים איתה ישר ישר בלי לפנות, מגיעים בסוף לאן שהתחלנו. באותו אופן, בכדור הארץ, אם מתחילים ללכת מנקודה כלשהי ישר ישר ישר, בסוף מסיימים להקיף את כל הכדור ומגיעים לנקודה ממנה התחלנו. ההיקף של כדור הארץ, כלומר אורך המסלול שנצטרך ללכת כדי להקיף את כל כדור הארץ, הוא קצת יותר מ – 40,000 קילומטרים.\"\n<br>\"תגיד רז, ואתה באמת בטוח שכדור הארץ הוא עגול?\"\n<br>\"כן, בטוח לגמרי. אבל האמת שאת העובדה הזו לא תמיד ידעו. בתקופות קדמוניות היו כל מני השערות על מה מבנה העולם. לדוגמה ההודים הקדמונים חשבו שהעולם ניצב על גבו של צב ענק שעומד בעצמו על ארבעה פילים. ובמצרים העתיקה, חשבו שהעולם הוא עיגול שטוח השט באוקיינוס.\" \n<br>\"איזה פחד! ואם אתה מגיע לקצה, אתה פשוט יכול להביט למטה ולהיזהר לא ליפול!\"\n<br>\"ממש ככה, אבל אנחנו כבר יודעים שכדור הארץ הוא עגול ולא שטוח, אז אין לו קצה.\"\n<br>\"מזל, אז אי אפשר ליפול.\"&nbsp;<br></p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content6-b",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "rrebwpEKR8",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "& when not (@reverseContent)": {
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-right": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".mbr-figure": {
+                  "padding-bottom": "1rem"
+                }
+              }
+            },
+            "& when (@reverseContent)": {
+              ".media-container-row": {
+                "flex-direction": "row-reverse",
+                "-webkit-flex-direction": "row-reverse"
+              },
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-left": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".media-container-row": {
+                  "flex-wrap": "wrap-reverse",
+                  "-webkit-flex-wrap": "wrap-reverse"
+                },
+                ".mbr-figure": {
+                  "padding-top": "1rem"
+                }
+              }
+            },
+            ".mbr-text": {
+              "color": "#767676",
+              "text-align": "right"
+            }
+          },
+          "_name": "content6",
+          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"60\">\n        <input type=\"checkbox\" title=\"Text On Right/Left\" name=\"reverseContent\">  \n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <a href=\"https://www.youtube.com/watch?v=OUKrNu5uPtc&list=PLamMaBRwRWVoKNFQ-H2MW0lfbV0or9gCE&index=6&t=0s\"><img src=\"@PROJECT_PATH@/assets/images/5-436x272.png\" alt=\"Mobirise\" title></a>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\"את העובדה שכדור הארץ עגול גילו היוונים הקדמונים. נהוג לייחס את הגילוי לחכם היווני פיתגורס, זה שעל שמו נקרא משפט פיתגורס, אבל עדויות היסטוריות מציעות שבעצם גילו את עובדת היות כדור הארץ עגול עוד לפניו, החכמים פָּרְמֶנִידֶס ואֶמְפֵּדוֹקְלֶס במאה השישית או החמישית לפני הספירה והחל מאותה תקופה התפשטה בעולם ההבנה שכדור הארץ הוא עגול.\"\n<br>\"וזה שכדור הארץ הוא עגול הפך לשימושי אי פעם? נגיד, מישהו באמת ניסה לצאת מהבית ללכת ישר ישר ישר ולחזור לאותו מקום?\"\n<br>\"שאלה טובה! התשובה היא כן ולא. כן, מישהו ניסה וגם הצליח להקיף את כדור הארץ ולא הוא לא עשה את זה בהליכה. הראשונים להקיף את כדור הארץ היו משלחת שהוביל פרדיננד מַגֶלַן שהיה מגלה ארצות מפורטוגול. בשנת 1519 יצא מגלן מהעיר סביליה שבספרד בראש צי של חמש ספינות. הצי הקיף את כל העולם ושלוש שנים אחר כך, בשנת 1522, הגיע בחזרה לסיביליה והשלים את הקפת כדור הארץ. מגלן אמנם לא זכה להשלים את המסע אבל הסגן שלו חואן סבסטיאן אלקנו קיבל כאות הוקרה על גבורתו שלט אצולה ממלך ספרד, קרלוס הראשון.\n<br>\"ומה היה כתוב בשלט האצולה הזה?\"\n<br>\"כיוון שחואן סבסטיאן אלקנו עמד בראש המשלחת הראשונה להקיף את כדור הארץ, בשלט האצולה שלו נכתב בלטינית 'הראשון להקיפני'.\"\n<br>\"אה, איך אומרים את זה בלטינית כל אחד יודע: \" Te audire no possum. Musa sapientum fixa est in aure. \"\n<br>זיזי בחיי, כמה שטויות זיקית אחת יכולה לדבר. לא, משמעות המשפט הזה שאמרת Te audire no possum. Musa sapientum fixa est in aure היא \"אני לא יכול לשמוע, יש לי בננה באוזן\". בלטינית, הראשון להקיפני זה Primus circumdedisti me.\n<br>\"מה, מה אמרת עכשיו רז? אני לא שומע.\"\n<br>\"מה פתאום אתה לא שומע? יש לך בננה באוזן?\"\n<br>\"מה אמרת רז? אני לא מצליח לשמוע, יש לי בננה באוזן\".&nbsp;<br></p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content6-d",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "rrebwOMLsJ",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "& when not (@reverseContent)": {
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-right": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".mbr-figure": {
+                  "padding-bottom": "1rem"
+                }
+              }
+            },
+            "& when (@reverseContent)": {
+              ".media-container-row": {
+                "flex-direction": "row-reverse",
+                "-webkit-flex-direction": "row-reverse"
+              },
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-left": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".media-container-row": {
+                  "flex-wrap": "wrap-reverse",
+                  "-webkit-flex-wrap": "wrap-reverse"
+                },
+                ".mbr-figure": {
+                  "padding-top": "1rem"
+                }
+              }
+            },
+            ".mbr-text": {
+              "color": "#767676",
+              "text-align": "right"
+            }
+          },
+          "_name": "content6",
+          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"60\">\n        <input type=\"checkbox\" title=\"Text On Right/Left\" name=\"reverseContent\" checked>  \n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <a href=\"https://www.youtube.com/watch?v=kj8DONKu5Oo&list=PLamMaBRwRWVoKNFQ-H2MW0lfbV0or9gCE&index=7&t=0s\"><img src=\"@PROJECT_PATH@/assets/images/6-436x287.png\" alt=\"Mobirise\" title></a>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">אוקיי, אז אמרנו שכדור הארץ הוא כוכב לכת ואמרנו שכוכב לכת זה פשוט גוף גדול שנמצא בחלל. אז בעצם הכוונה היא שכוכבי לכת הם כל הכוכבים שאנחנו רואים בשמים, כמו השמש והירח?\"\n<br>\"לא בדיוק. מדע האסטרונומיה, מפריד בין כוכבי שבת וכוכבי לכת.\"\n<br>\"מה זה גסטרונומיה?\"\n<br>\"לא גסטרונומיה, אסטרונומיה. גסטרונומיה, הוא מחקר של המזון בתרבות האנושית – לדוגמה אומנות הבישול. אסטרונומיה היא מילה שמקורה ביוונית – צירוף של המילים נומוס (חוק) ואסטרון (כוכב) – אסטרונומיה  היא  ענף המחקר העוסק בתנועה והמבנה של היקום והעצמים הנמצאים בו והיא אחד מתחומי המדע העתיקים ביותר.\"\n<br>\"אוקיי, אז מה יש לאסטרונומים האלה להגיד על כוכבי לכת וכוכבי שבת?\"\n<br>\"כוכבי שבת הם כוכבים גדולים וזוהרים, השמש לדוגמה היא כוכב שבת. לעומתם כוכבי לכת, הנקראים גם פלנטות, הם כוכבים קטנים יותר שאינם זוהרים. כדור הארץ לדוגמה הוא כוכב לכת. כוכבי לכת נקראים \"כוכבי לכת\" כיוון שהם מסתובבים סביב כוכבי השבת, כמו שכדור הארץ מסתובב סביב השמש, ואפשר לחשוב כאילו הם כל הזמן הולכים סביב.\n<br>\"הבנתי – מסתובבים, הולכים, ללכת, כוכב לכת. ולכוכבי שבת קוראים ככה כי הם מלאכת מחשבת?\"\n<br>\"זיק, באמת, לכוכבי שבת קוראים ככה כי הם כאילו שובתים מתנועה כשכל כוכבי הלכת מסתובבים סביבם\".\n<br>\"אה, הבנתי, שובתים, לשבת, כוכב שבת, לנוח, תפוח, דג מלוח.\"\n<br>\"כן, כן, אני חושב שהבנת את הנקודה. בקיצור – כוכבי לכת הולכים, כוכבי שבת יושבים ושובתים.\"&nbsp;<br></p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content6-e",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "rrebx0uMTJ",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "& when not (@reverseContent)": {
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-right": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".mbr-figure": {
+                  "padding-bottom": "1rem"
+                }
+              }
+            },
+            "& when (@reverseContent)": {
+              ".media-container-row": {
+                "flex-direction": "row-reverse",
+                "-webkit-flex-direction": "row-reverse"
+              },
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-left": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".media-container-row": {
+                  "flex-wrap": "wrap-reverse",
+                  "-webkit-flex-wrap": "wrap-reverse"
+                },
+                ".mbr-figure": {
+                  "padding-top": "1rem"
+                }
+              }
+            },
+            ".mbr-text": {
+              "color": "#767676",
+              "text-align": "right"
+            }
+          },
+          "_name": "content6",
+          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"60\">\n        <input type=\"checkbox\" title=\"Text On Right/Left\" name=\"reverseContent\">  \n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <a href=\"https://www.youtube.com/watch?v=24uZsdbkHTo&list=PLamMaBRwRWVoKNFQ-H2MW0lfbV0or9gCE&index=8&t=0s\"><img src=\"@PROJECT_PATH@/assets/images/7-436x265.png\" alt=\"Mobirise\" title></a>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\"אני זוכר שפעם ניסיתי ללמוד את העניין הזה ושאז הבנתי שכדור הארץ נמצא במשהו שקוראים לו... שקוראים לו... 'מחפפת הרפש'\".\n<br>\"אתה בטח מתכוון מערכת השמש\".\n<br>\"כן, בדיוק, 'מאלחשת החרש'\".\n<br>\"זיק! מערכת השמש\".\n<br>\"אוקיי, תרגע. אז מה זו מערכת השמש הזו שאתה כל כך נרגש ממנה?\"\n<br>\"אני נרגש? אתה שאלת\"\n<br>\"כן, כן, אני פשוט לא נעים לי שכדור הארץ ישאר כל כך בודד.\"\n<br>\"זיק, יש לך לב זהב. כדור הארץ הוא באמת לא בודד. כדור הארץ הוא כוכב לכת וכוכב השבת שאותו הוא מקיף הוא השמש.\"\n<br>\"אז כדור הארץ מסתובב כל הזמן סביב השמש?\"\n<br>\"כן, בדיוק.\"\n<br>\"וכדור הארץ הוא היחיד שמקיף את השמש?\" \n<br>\"חוץ מכדור הארץ יש עוד שבעה כוכבי לכת שמקיפים את השמש. ביחד, השמש ושמונת הכוכבים האלה נקראים מערכת השמש.\"\n<br>\"וזהו? רק השמש ושמונת הכוכבים שמקיפים אותה?\"\n<br>\"האמת שלא, במערכת השמש נחשבים כל הגופים שמקיפים את השמש ויש עוד כמה גופים שמקיפים אותה, חלקם הם גדולים וגם די מפורסמים\"\n<br>\"אני יודע, הירח!\"\n<br>\"נכון, גם הירח. הירח סובב סביב כדור הארץ ולכן ביחד עם כדור הארץ גם הוא מקיף את השמש ולכן גם הוא חלק ממערכת השמש.\"\n<br>\" נכון, נכון, נכון ובגלל זה הוא עשוי מגבינה צהובה.\"\n<br>\"מה פתאום זיק, הירח לא עשוי מגבינה צהובה.\"\n<br>\"ומה חוץ מהירח?\"\n<br>\" יש עוד כמה גופים שהם אמנם קצת יותר קטנים מכוכבי הלכת אבל עדיין גדולים למדי, כמו הירח, וגם הם מקיפים את השמש וחוץ מהם יש המון המוני גופים קטנים בהרבה שגם הם מקיפים את השמש.\"\n<br>\"סתם סלעים גדולים שמסתובבים בחלל ומקיפים את השמש\".\n<br>\"כן, האמת שזה תיאור לא רע שלהם. לגופים קטנים כאלה שמקיפים את השמש קוראים אסטרואידים ובמערכת השמש יש כמה מאות אלפים שלהם, יותר מחצי מיליון.\"&nbsp;<br></p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content6-f",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "rrebxca5kv",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "& when not (@reverseContent)": {
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-right": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".mbr-figure": {
+                  "padding-bottom": "1rem"
+                }
+              }
+            },
+            "& when (@reverseContent)": {
+              ".media-container-row": {
+                "flex-direction": "row-reverse",
+                "-webkit-flex-direction": "row-reverse"
+              },
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-left": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".media-container-row": {
+                  "flex-wrap": "wrap-reverse",
+                  "-webkit-flex-wrap": "wrap-reverse"
+                },
+                ".mbr-figure": {
+                  "padding-top": "1rem"
+                }
+              }
+            },
+            ".mbr-text": {
+              "color": "#767676",
+              "text-align": "right"
+            }
+          },
+          "_name": "content6",
+          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"60\">\n        <input type=\"checkbox\" title=\"Text On Right/Left\" name=\"reverseContent\" checked>  \n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <a href=\"https://www.youtube.com/watch?v=orDsYV20u1I&list=PLamMaBRwRWVoKNFQ-H2MW0lfbV0or9gCE&index=9&t=0s\"><img src=\"@PROJECT_PATH@/assets/images/8-436x258.png\" alt=\"Mobirise\" title></a>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\"במערכת השמש יש שמונה כוכבים.\"\n<br>\"וכדור הארץ הוא הכי קרוב מכולם לשמש?\"\n<br>\"לא. כוכב הלכת הכי קרוב לשמש הוא חמה, כוכב הלכת הכי קטן במערכת השמש. הכוכב השני במרחקו מהשמש הוא כוכב נוגה והוא הכוכב הכי קרוב לכדור הארץ.\"\n<br>\"זאת אומרת שכדור הארץ הוא השלישי במרחקו מהשמש?\"\n<br>\"בדיוק, חמה, נגה ואז כדור הארץ.\"\n<br>\"ומי הכוכב הבא בתור?\"\n<br>\"מאדים. מאדים הוא כוכב הלכת הרביעי במערכת השמש.\"\n<br>\"אהה, וקוראים לו מאדים כי יש בו הרבה אדים?\"\n<br>\"לא, זיזי! מקור השם מאדים הוא בצבע האדמדם של הכוכב. \"\n<br>\"אוקיי, אז חמה, נגה, כדור הארץ, מאדים, מי אז?\"\n<br>\"הכוכב החמישי במערכת השמש הוא צדק, הכוכב עם המסה הכי גדולה במערכת השמש. המסה של צדק היא פי יותר מ – 300 מהמסה של כדור הארץ ופי 2.5 מהמסה של כל שאר כוכבי הלכת במערכת השמש מחוברים יחד.\"\n<br>\"חמה, נגה, כדור הארץ, מאדים האדום, צדק הגדול, מי אז?\"\n<br>\"שבתאי. שבתאי הוא כוכב הלכת השישי במערכת השמש והוא ידוע בטבעות היפות שמקיפות אותו. הטבעות האלה מכילות חלקיקים קטנים וגושי קרח והן ממש יפהפיות.\"\n<br>\"אוקיי –אחת חמה, שתיים נוגה, שלוש כדור הארץ, ארבע מאדים, חמש צדק, שש שבתאי מי אחר כך?\"\n<br>\"הכוכב השביעי הוא אורנוס ובעברית קוראים לו אורון. כמו שלנו, כדור הארץ יש ירח אחד, לאורנוס יש 27 ירחים.\"\n<br>\"מה! ואיך מבדילים בינהם כשאומרים \"תסתכל כמה יפה הירח הלילה, הוא נראה ממש כגוש גבינה צהובה וטעימה.\"\n<br>\"זיק הירח לא עשוי מגבינה צהובה! לכל אחד מ – 27 הירחים של אורנוס יש באמת שם מיוחד והם כולם קרויים על שם דמויות ממחזות של שני משוררים אנגליים – ויליאם שייקספיר ואלכסנדר פופ.\" \n<br>\"אהה מי לא מכיר, שמות ירחים כמו קורדיליה, אופליה, ביאנקה, קיופיד בלינדה מירנדה ואוברון. אז מה היה לנו – חמה, נגה כדור הארץ, מאדים, חמש צדק הגדול, שש שבתאי עם הטבעות, שבע אורנוס עם הירחים, מי האחרון?\"\n<br>\"כוכב הלכת השמיני והאחרון במערכת השמש הוא נפטון ובעברית שמו רהב. נפטון מפורסם ברוחות החזקות שנושבות בו – רוחות במהירות של יותר מ – 2,000 קמ\"ש, החזקות ביותר במערכת השמש, ובגלל שהוא כוכב הלכת הכי רחוק מהשמש, חום כמעט לא מגיע אליו והטמפרטורה בו יכולה להגיע למינוס 218 מעלות צלזיוס.\"\n<br>\"ברררר, איזה קור\".\n<br>\"אז זהו אני מכיר את כולם – \n<br>לא חכמה הראשון הוא חמה,\n<br>ממש ברוגע השני הוא נגה,\n<br>כדור הארץ שלנו האישי הוא הכוכב השלישי,\n<br>באופן טבעי מאדים הרביעי,\n<br>חמישי ענק זה צדק הפושטק,\n<br>שישי עם טבעות זה שבתאי לא פחות,\n<br>שביעי עם ירחים אורנוס הטעים,\n<br>שמיני קריר ואחרון קריר זה נפטון הנפטון.\"\n<br>\"זהו סוף סוף אני מכיר את כל הכוכבים במערכת השמש\"&nbsp;<br></p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content6-g",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "rrebxpbYys",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "& when not (@reverseContent)": {
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-right": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".mbr-figure": {
+                  "padding-bottom": "1rem"
+                }
+              }
+            },
+            "& when (@reverseContent)": {
+              ".media-container-row": {
+                "flex-direction": "row-reverse",
+                "-webkit-flex-direction": "row-reverse"
+              },
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-left": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".media-container-row": {
+                  "flex-wrap": "wrap-reverse",
+                  "-webkit-flex-wrap": "wrap-reverse"
+                },
+                ".mbr-figure": {
+                  "padding-top": "1rem"
+                }
+              }
+            },
+            ".mbr-text": {
+              "color": "#767676",
+              "text-align": "right"
+            }
+          },
+          "_name": "content6",
+          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"60\">\n        <input type=\"checkbox\" title=\"Text On Right/Left\" name=\"reverseContent\">  \n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <a href=\"https://www.youtube.com/watch?v=zQMf3rWRhuw&list=PLamMaBRwRWVoKNFQ-H2MW0lfbV0or9gCE&index=10&t=0s\"><img src=\"@PROJECT_PATH@/assets/images/9-436x251.png\" alt=\"Mobirise\" title></a>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\"אני חושב ששכחת מישהו, קטן, קטנטן, כל כך קטן שהוא הכוכב הכי גדול במערכת השמש, כל כך קטן שכמעט כמעט כל המסה של מערכת השמש נמצאת בו.\"\n<br>\"נו מי זה יכול להיות רז, תגלה לי!\"\n<br>\"אנחנו כבר מכירים את שמונת כוכבי הלכת של מערכת השמש והם באמת כל כוכבי הלכת של מערכת השמש, אבל, מישהו אחד שעדיין לא דיברנו עליו הוא הכוכב העצום שנמצא במערכת השמש וכל שאר הכוכבים סובבים אותו. אני אתן לך רמז זיק, זה לא מישהו זו מישהי.\"\n<br>\"אני יודע! ניצה כרפדיצה השכנה מקומה שנייה.\" \"לא...\" \"כוכב על בחלל זו דודה שלי גרישנקה מהקומה מעל!\"\n<br>\"לא. הכוכב הכי גדול במערכת השמש הוא כמובן השמש. השמש מהווה .99.86% מהמסה של מערכת השמש. תחשוב זיק, כל שמונת כוכבי הלכת, כל האסטרואידים, כולם ביחד והשמש עדיין יותר כבדה מהם בערך פי שבע מאות. כדי להבין כמה השמש היא גדולה אפשר לחשוב על הקוטר שלה, הקוטר של כדור הארץ הוא 12,742 ק\"מ. הקוטר של השמש הוא יותר ממיליון ושלוש מאות אלף ק\"מ, זה אומר שאפשר לסדר מאה כדורי הארץ אחד על השני והם עדיין לא יגיעו לגובה של השמש, זה אומר שאפשר להכניס יותר ממיליון כדורי הארץ לתוך השמש ושעדיין יישאר עוד מלא מקום או אם כדור הארץ היה בגודל של ענב, השמש היא בגודל של גלגל של משאית, ע-צ-ו-מ-ה!\"&nbsp;<br></p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content6-h",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "rrebxB0sRJ",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "& when not (@reverseContent)": {
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-right": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".mbr-figure": {
+                  "padding-bottom": "1rem"
+                }
+              }
+            },
+            "& when (@reverseContent)": {
+              ".media-container-row": {
+                "flex-direction": "row-reverse",
+                "-webkit-flex-direction": "row-reverse"
+              },
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-left": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".media-container-row": {
+                  "flex-wrap": "wrap-reverse",
+                  "-webkit-flex-wrap": "wrap-reverse"
+                },
+                ".mbr-figure": {
+                  "padding-top": "1rem"
+                }
+              }
+            },
+            ".mbr-text": {
+              "color": "#767676",
+              "text-align": "right"
+            }
+          },
+          "_name": "content6",
+          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"60\">\n        <input type=\"checkbox\" title=\"Text On Right/Left\" name=\"reverseContent\" checked>  \n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <a href=\"https://www.youtube.com/watch?v=mEqH-GK-Op0&list=PLamMaBRwRWVoKNFQ-H2MW0lfbV0or9gCE&index=11&t=0s\"><img src=\"@PROJECT_PATH@/assets/images/10-436x258.png\" alt=\"Mobirise\" title></a>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\"אוקיי, אז אני מבין, כדור הארץ נמצא במערכת השמש, אבל כל מערכת השמש הזו, איפה היא נמצאת?\"\n<br>\"זיזי, אני שמח ששאלת. מערכת השמש נמצאת בגלקסיית שביל החלב.\"\n<br>\"מה, חציל מעורבב?\"\n<br>\"זיזי, שביל החלב. שביל החלב היא הגלקסיה שבה נמצאת מערכת השמש שבה נמצא כדור הארץ שלנו.\"\n<br>\"ומה זו גלקסיה?\"\n<br>\"גלקסיה היא אוסף של כוכבים המסתובבים כולם ביחד סביב מרכז הכובד של הגלקסיה.\"\n<br>\"אה, הבנתי, וכמה כוכבים יש בגלקסיה? אם במערכת השמש שלנו יש כוכב אחד – השמש ועוד שמונה כוכבי לכת אז בגלקסיה בטח יש קצת יותר.\"\n<br>\"כן... קצת יותר...\"\n<br>\" כמה, עשרה כוכבים?\"\n<br>\"קצת יותר..\"\n<br>\"מאה כוכבים?\"\n<br>\"הרבה הרבה יותר.\"\n<br>\"מאה אלף כוכבים?\"\n<br>\"עדיין הרבה הרבה יותר. גודל של גלקסיות מאוד משתנה אבל באופן כללי הן מכילות המון המוני כוכבים. גלקסיות גמדיות מכילות כמה מאות מיליונים של כוכבים וגלקסיות ענקיות מכילות מאות טריליונים של כוכבים שזה עשר עם עוד 14 אפסים אחריו. לדוגמה בגלקסיה שלנו, גלקסיית שביל החלב יש בין 200 ל – 400 מיליארד כוכבים.\"\n<br>\"מה, כל כך הרבה!\"\n<br>\"כן זיזי. והגלקסיה עצומה בגודלה. אם היינו מכווצים את כדור הארץ שיהיה בגודל של מטבע, אז הגלקסיה הייתה בגודל של...\"\n<br>\"תפוח!\"\n<br>\"יותר גדול...\"\n<br>\"כדורסל!\"\n<br>\"יותר גדול..\"\n<br>\"כל הפילים ההיפופוטמים והקרנפים בגן החיות התנכ\"י יחד!\"\n<br>\"האמת זיזי, שהרבה יותר גדול. אם היינו מכווצים את כדור הארץ לגודל של מטבע, אז הגלקסיה הייתה בערך בגודל של כל ארצות הברית\".\n<br>\"וואוו, כמה גדול. ואיפה אנחנו בין כל מאות מיליוני הכוכבים האלה?\"\n<br>\"שביל החלב, היא גלקסיה ספירלית שמורכבת ממספר זרועות שצורתן הן בסיבוב ספירלי ממרכז הגלקסיה החוצה. כל זרוע, היא פשוט צבר גדול של כוכבים שמסתובבים ביחד סביב מרכז הגלקסיה. בשביל החלב יש מספר זרועות לדוגמה – זרוע הסרגל, זרוע פרסאוס והזרוע שמערכת השמש נמצאת בה – זרוע אוריון\"&nbsp;<br></p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content6-i",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "rrebxNZta0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "& when not (@reverseContent)": {
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-right": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".mbr-figure": {
+                  "padding-bottom": "1rem"
+                }
+              }
+            },
+            "& when (@reverseContent)": {
+              ".media-container-row": {
+                "flex-direction": "row-reverse",
+                "-webkit-flex-direction": "row-reverse"
+              },
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-left": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".media-container-row": {
+                  "flex-wrap": "wrap-reverse",
+                  "-webkit-flex-wrap": "wrap-reverse"
+                },
+                ".mbr-figure": {
+                  "padding-top": "1rem"
+                }
+              }
+            },
+            ".mbr-text": {
+              "color": "#767676",
+              "text-align": "right"
+            }
+          },
+          "_name": "content6",
+          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"60\">\n        <input type=\"checkbox\" title=\"Text On Right/Left\" name=\"reverseContent\">  \n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <a href=\"https://www.youtube.com/watch?v=3wQF5SyfNmE&list=PLamMaBRwRWVoKNFQ-H2MW0lfbV0or9gCE&index=12&t=0s\"><img src=\"@PROJECT_PATH@/assets/images/11-436x264.png\" alt=\"Mobirise\" title></a>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\"תגיד רז, אמרנו שבגלקסיה שלנו, גלקסיית שביל החלב, יש כמה מאות מיליארדים של כוכבים. אז, בטח אין מקום לעוד הרבה דברים חוץ מהגלקסיה שלנו, נכון?\"\n<br>\"זו שאלה ממש מצוינת שהעסיקה את מיטב האסטרונומים בעולם הרבה שנים, ועד לא כל כך מזמן לא ידעו מה התשובה. בתחילת המאה העשרים התקיים אירוע מאוד מפורסם שנודע בשם 'הוויכוח הגדול'. בוויכוח הגדול, התווכחו מדענים על מבנה היקום. חלק מהמדענים חשבו כמוך זיזי, שגלקסיית שביל החלב היא עצומה והיא הדבר היחיד ביקום, שחוץ ממנה אין כלום. לעומתם, מדענים אחרים חשבו שגלקסיית שביל החלב היא רק גלקסיה אחת ויש עוד גלקסיות נוספות חוץ ממנה. כדי להכריע את הוויכוח התכנסו קבוצה גדולה של אסטרונומים למה שנודע לימים כוויכוח הגדול במוזיאון הסמית'סוניאן בוושינגטון בארה\"ב. הוויכוח הגדול התקיים ב – 26 לאפריל 1920, ומדענים שייצגו את שתי הדעות התווכחו ביניהם על שתי העמדות הללו בנוגע למבנה היקום.\"\n<br>\"ומי ניצח בוויכוח?\"\n<br>\"האמת שבאותו הזמן אף אחד. האסטרונומים התווכחו והתווכחו ולא הצליחו להגיע למסקנה. הוויכוח הוכרע רק די הרבה שנים אחר כך, בעזרת תצפיות מודרניות מטלסקופ משוכלל שבנה אחד האסטרונומים הגדולים של כל הזמנים ששמו..\"\n<br>\"אני יודע, חוט חשמל!\"\n<br>\"מה?\"\n<br>\"אה... כבל!\"\n<br>\"מה?!\"\n<br>\"אה.. האבל!\"\n<br>\"בדיוק. אדווין האבל, שעל שמו קרוי טלסקופ החלל המפורסם, טלקסקופ האבל, היה אסטרונום אמריקאי. בעזרת התצפיות של האבל, הוכרע סוף סוף הוויכוח ואתה רוצה לנחש מה התוצאה?\"\n<br>\"אה... אני מהמר שביקום יש עוד גלקסיות חוץ משביל החלב.\"\n<br>\"זיזי, צדקת. התצפיות של האבל ועבודה של מדענים נוספים אישרה את ההשערה ששביל החלב היא רק גלקסיה אחת מני רבות.\"\n<br>\"ותן לי לנחש, אתה שוב הולך לספר לי שיש ממש ממש הרבה גלקסיות.\"&nbsp;<br></p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content6-j",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "rrebxZJOaZ",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "& when not (@reverseContent)": {
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-right": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".mbr-figure": {
+                  "padding-bottom": "1rem"
+                }
+              }
+            },
+            "& when (@reverseContent)": {
+              ".media-container-row": {
+                "flex-direction": "row-reverse",
+                "-webkit-flex-direction": "row-reverse"
+              },
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-left": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".media-container-row": {
+                  "flex-wrap": "wrap-reverse",
+                  "-webkit-flex-wrap": "wrap-reverse"
+                },
+                ".mbr-figure": {
+                  "padding-top": "1rem"
+                }
+              }
+            },
+            ".mbr-text": {
+              "color": "#767676",
+              "text-align": "right"
+            }
+          },
+          "_name": "content6",
+          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"60\">\n        <input type=\"checkbox\" title=\"Text On Right/Left\" name=\"reverseContent\" checked>  \n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <a href=\"https://i.ytimg.com/vi/ZOHztPzNBz4/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDOmflK6858U-5A-MGS3LIVX2QEWQ\"><img src=\"@PROJECT_PATH@/assets/images/12-436x270.png\" alt=\"Mobirise\" title></a>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\"אנחנו לא יודעים בדיוק, אבל מדענים מעריכים שיש ביקום כמה מאות מיליארדים או אלפי מיליארדים של גלקסיות.\"\n<br>\"ומה עם בשכונה שלנו, יש כמה גלקסיות שקרובות אלינו?\"\n<br>\"בסמוך לשביל החלב, יש כמה גלקסיות ננסיות, אבל הגלקסיה הרצינית שהכי קרובה אלינו, היא גלקסיית אנדרומדה.\"\n<br>\"איזה יופי! אז מה דעתך רז שנסע לשם ביחד? אני כבר סיימתי את התה שלי אבל שלך עדיין חם, אפשר לקחת אותו איתנו לדרך\"\n<br>\"זיזי זה רעיון מאוד נחמד, אבל קצת קשה ליישום, זה פשוט ייקח די הרבה זמן.\"\n<br>\"רז, עם הטרנטה שלך, רק לנסוע לירושלים ייקח הרבה זמן. בוא ניקח מכונית מהירה, הכי מהירה שיש ונסע לאנדרומדה.\"\n<br>\"בוא נחשוב. המכונית הכי מהירה בהיסטוריה האנושית היא מכונית הדחף העל-קולית, ThrustSSC מבריטניה. המכונית מונעת על ידי שני מנועי סילון וב –1997 שברה את שיא העולם למהירות של כלי רכב כשיצאה למדבר נוואדה בארצות הברית והגיעה למהירות של 1,228 קמ\"ש.\" \n<br>\"מעולה! בן דוד שלי ארל-גריי גר בבריטניה ואני בטוח שאם נבקש ממנו, הוא יוכל לסדר לנו סיבוב בה. אז אם ניקח את האוטו החביב הזה, כמה זמן ייקח לנו להגיע לגלקסיית אנדרומדה?\"\n<br>\"אם ניקח את המכונית הכי מהירה בעולם, ונכפיל את המהירות שלה לא הרבה, רק בערך פי מיליון כדי שתגיע למהירות האור?\"\n<br>\"אז נגיע לאנדרומדה תוך....\"\n<br>\"בערך שניים וחצי מיליון שנים.\"\n<br>\"אה, עד אז, כבר יתקרר לך התה.\"&nbsp;<br></p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content6-k",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "rrebycEB8R",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "& when not (@reverseContent)": {
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-right": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".mbr-figure": {
+                  "padding-bottom": "1rem"
+                }
+              }
+            },
+            "& when (@reverseContent)": {
+              ".media-container-row": {
+                "flex-direction": "row-reverse",
+                "-webkit-flex-direction": "row-reverse"
+              },
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-left": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".media-container-row": {
+                  "flex-wrap": "wrap-reverse",
+                  "-webkit-flex-wrap": "wrap-reverse"
+                },
+                ".mbr-figure": {
+                  "padding-top": "1rem"
+                }
+              }
+            },
+            ".mbr-text": {
+              "color": "#767676",
+              "text-align": "right"
+            }
+          },
+          "_name": "content6",
+          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"60\">\n        <input type=\"checkbox\" title=\"Text On Right/Left\" name=\"reverseContent\">  \n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <a href=\"https://www.youtube.com/watch?v=-_L8TktoKSQ&list=PLamMaBRwRWVoKNFQ-H2MW0lfbV0or9gCE&index=14&t=0s\"><img src=\"@PROJECT_PATH@/assets/images/13-436x273.png\" alt=\"Mobirise\" title></a>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">אז מה אתה אומר זיזי, קיבלת תשובה טובה לשאלה שלך?\n<br>\"אממ.. כן ולא.\"\n<br>\"מה זאת אומרת?\"\n<br>\"כן, אני חושב שהבנתי איפה אנחנו –על כדור הארץ, כדור עגול שהוא כוכב לכת המסתובב סביב כוכב השבת שהוא השמש שלנו. סביב השמש יש שמונה כוכבי לכת – חמה, נגה, כדור הארץ, מאדים, צדק, שבתאי, אורנוס ונפטון - וכל אלה ביחד נקראים מערכת השמש. מערכת השמש היא רק חלק קטנטנן מקבוצה הרבה יותר גדולה של כוכבים שקוראים לה גלקסיה. מערכת השמש שלנו נמצאת בגלקסיית שביל החלב וכמוה יש עוד הרבה גלקסיות ענקיות ורחוקות כמו לדוגמה גלקסיית אנדרומדה שהיא הגלקסיה השכנה שלנו.\"\n<br>\"זיזי, הכל נכון. אבל כששאלתי אותך אם קיבלת תשובה לשאלה שלך אמרת כן ולא, ולפי מה שסיפרת עכשיו נשמע לי שלגמרי כן.\"\n<br>\"אה... בערך. כן, קיבלתי תשובה לשאלה איפה אנחנו אבל לא, זה לא מה שרציתי לשאול אותך היום.\"\n<br>\"מה זאת אומרת, 'לא זה מה שרצית לשאול'. אני באזניים שלי שמעתי.\"\n<br>\"אני רציתי לשאול איפה אנחנו...\"\n<br>\"נו ואני עניתי לך – אסטרונומיה, מגלן הספרדי, הוויכוח הגדול במוזיאון הסמית'סוניאן, האבל התצפיות והטלסקופ, המכונית המהירה בעולם במדבר נוואדה, הבננה באוזן.\"\n<br>\"הבעיה שלך שאתה לא מקשיב עד הסוף.\"\n<br>\"מה?\"\n<br>\"אל תגיד מה אם שמעת.\" \n<br>\"אני רציתי לשאול, איפה אנחנו.. אוכלים היום צהריים\".\n<br>\"אה.\"\n<br>\"אז אתה רגוע?\"\n<br>\"רגוע, מה יש לך?\"\n<br>\"בטוח, רגוע?\"\n<br>\"רגוע, רגוע\"\n<br>\"אז איפה אנחנו... אוכלים היום?\"\n<br>\"זיזי שאני לא אתפוס אותך! כדאי שתברח לאנדרומדה!\"\n<br>\"אני בורח לבן דוד שלי ארל גריי!\"&nbsp;<br></p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content6-l",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "rrecTUfGGK",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
